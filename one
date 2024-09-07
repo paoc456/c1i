@@ -5,7 +5,7 @@
       body {
         background-color: Ivory;
         color; MidnightBlue;
-        }
+          }
     </style>
   </head>
   <body>
@@ -13,5 +13,6 @@
     <h3>Manhattan</h3>
     <p>
       A series of shop and restaurant signs in Chinatown. Along Elizabeth, Mott and Canal Street of Lower Manhattan.
+    </p>
   </body>
 </html>
