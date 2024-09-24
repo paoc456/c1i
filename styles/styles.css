@@ -25,3 +25,19 @@ body {
   a {
     margin-left: 20px;
   }
+
+  a {
+    color: midnightblue;
+  }
+  
+  a:visited {
+    color: orangered;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: orangered;
+  }
