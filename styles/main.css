@@ -6,11 +6,13 @@ body {
   h1 {
     color: midnightblue;
     margin-left: 20px;
+    font-family: Poppins;
   }
 
   h3 {
     color: midnightblue;
     margin-left: 20px;
+    font-family: Poppins;
   }
 
   img {
@@ -20,6 +22,7 @@ body {
   p {
     color: midnightblue;
     margin-left: 20px;
+    font-family: Poppins;
   }
 
   a {
@@ -28,10 +31,11 @@ body {
 
   a {
     color: midnightblue;
+    font-family: Poppins;
   }
   
   a:visited {
-    color: orangered;
+    color: orange;
   }
 
   a:hover {
