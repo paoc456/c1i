@@ -36,7 +36,6 @@ body {
   
   .wrapper {
     display: flex;
-    flex-flow: wrap;
     max-width: 1300px;
     column-gap: 20px;
     justify-content: space-around;
