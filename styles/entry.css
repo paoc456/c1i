@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: ivory;
+
+}
+
+h1 {
+    color: midnightblue;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: "Poppins";
+    font-size: 60px;
+}
+
+h3 {
+    color: midnightblue;
+    margin-left: 100px;
+    font-family: "Poppins";
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+
+}
+
+p {
+    color: midnightblue;
+    margin-left: 100px;
+    font-family: "Poppins"
+}
+
+a {
+    margin-left: 100px;
+    font-family: "Poppins";
+}
+
+.entry01img {
+    /* entry 1 in chinatown */
+    display: flex;
+    max-width: 9%;
+    column-gap: 20px;
+    justify-content: space-around;
+}
