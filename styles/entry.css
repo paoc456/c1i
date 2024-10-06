@@ -39,8 +39,45 @@ a {
 
 .entry01img {
     /* entry 1 in chinatown */
-    display: flex;
-    max-width: 9%;
-    column-gap: 20px;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
+}
+
+.entry02img {
+    /* entry 2 in flatiron */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
+}
+
+.entry03img {
+    /* entry 3 in les soho */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
+}
+
+.entry04img {
+    /* entry 4 in williamsburg */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
+}
+
+.entry05img {
+    /* entry 5 in fidi */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 10px;
+    row-gap: 100px;
+
 }
