@@ -37,6 +37,12 @@ a {
     font-family: "Poppins";
 }
 
+footer {
+    margin-left: 100px;
+    font-family: "Poppins";
+    font-style: italic;
+}
+
 .entry01img {
     /* entry 1 in chinatown */
     display: grid;
@@ -78,6 +84,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     column-gap: 10px;
-    row-gap: 100px;
+    row-gap: 50px;
 
 }
