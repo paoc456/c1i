@@ -50,6 +50,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 100px;
+    padding-right: 70px;
 }
 
 .entry02img {
@@ -58,6 +59,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 50px;
+    padding-right: 70px;
 
 }
 
@@ -67,6 +69,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 50px;
+    padding-right: 70px;
 
 }
 
@@ -76,6 +79,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 50px;
+    padding-right: 70px;
 
 }
 
@@ -85,6 +89,7 @@ footer {
     grid-template-columns: repeat(3, 2fr);
     column-gap: 10px;
     row-gap: 50px;
+    padding-right: 70px;
 
 }
 

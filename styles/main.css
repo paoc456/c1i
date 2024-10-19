@@ -56,6 +56,16 @@ footer {
   max-width: 800px;
 }
 
+.name2 {
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: "Poppins";
+  font-size: 4em;
+  line-height: 250%;
+  max-width: 900px;
+}
+
 .desc {
   font-family: "Poppins";
   font-size: 1.5em;
