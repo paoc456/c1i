@@ -41,6 +41,7 @@ footer {
     margin-left: 100px;
     font-family: "Poppins";
     font-style: italic;
+    color: midnightblue
 }
 
 .entry01img {
@@ -86,6 +87,17 @@ footer {
     row-gap: 50px;
 
 }
+
+.entry06img {
+    /* entry 6 in east village */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 10px;
+    row-gap: 50px;
+    padding-right: 70px;
+
+}
+
 
 @media screen and (max-width: 400px) {
     body {
@@ -143,7 +155,12 @@ footer {
         }
 
         .entry05img {
-            grid-template-columns: repeat(auto-fill, minmax(420px, 2fr));
+            grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+            gap: 1.5rem;
+        }
+
+        .entry06img {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
             gap: 1.5rem;
         }
 
