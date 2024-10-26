@@ -111,6 +111,16 @@ footer {
 
 }
 
+.entry07img {
+    /* entry 6 in east village */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 10px;
+    row-gap: 50px;
+    padding-right: 70px;
+
+}
+
 
 @media screen and (max-width: 400px) {
     body {
@@ -133,6 +143,14 @@ footer {
         }
 
         .entry05img {
+            grid-template-columns: (1fr);
+        }
+
+        .entry06img {
+            grid-template-columns: (1fr);
+        }
+
+        .entry07img {
             grid-template-columns: (1fr);
         }
     }
@@ -173,6 +191,11 @@ footer {
         }
 
         .entry06img {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+            gap: 1.5rem;
+        }
+
+        .entry07img {
             grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
             gap: 1.5rem;
         }
