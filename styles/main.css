@@ -5,7 +5,7 @@ html {
   cursor: help;
   cursor: progress;
 
-  cursor: url("images/star.png"), 0 0, pointer;
+  cursor: url("images/star.png"), 0 0, pointer, auto;
 }
 
 body {
