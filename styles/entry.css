@@ -52,6 +52,14 @@ footer {
     color: midnightblue
 }
 
+button {
+    margin-left: 100px;
+    font-family: "Poppins";
+    font-style: italic;
+    background-color: midnightblue;
+    color: ivory
+}
+
 .entry01img {
     /* entry 1 in chinatown */
     display: grid;
@@ -121,6 +129,20 @@ footer {
 
 }
 
+.button {
+    display: inline-block;
+    font-family: "Poppins";
+    padding: 5px 5px;
+    background-color: midnightblue;
+    color: ivory;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.button:hover {
+    background-color: midnightblue;
+}
 
 @media screen and (max-width: 400px) {
     body {
