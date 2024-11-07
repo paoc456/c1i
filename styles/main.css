@@ -77,3 +77,14 @@ footer {
   margin-top: -80px;
   line-height: 300%;
 }
+
+.serifcategory {
+  top: 0;
+  left: 50;
+  right: 1000;
+  margin: 60px;
+}
+
+.serifcategory {
+  cursor: pointer;
+}
