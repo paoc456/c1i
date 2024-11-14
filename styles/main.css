@@ -78,13 +78,10 @@ footer {
   line-height: 300%;
 }
 
-.serifcategory {
-  top: 0;
-  left: 50;
-  right: 1000;
-  margin: 60px;
-}
-
-.serifcategory {
-  cursor: pointer;
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 0px;
+  row-gap: 40px;
+  padding-right: 70px;
 }
