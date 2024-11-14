@@ -79,9 +79,8 @@ footer {
 }
 
 .categories {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  column-gap: 0px;
-  row-gap: 40px;
-  padding-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
 }
