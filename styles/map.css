@@ -65,13 +65,10 @@ footer {
 
 .sectionblue {
     width: 100vw;
-    /* Full viewport width */
     margin-left: calc(50% - 50vw);
-    /* Center alignment */
     background-color: midnightblue;
-    /* Example background color */
     padding: 20px 0;
-    /* Adjust padding as needed */
+    cursor: url("/images/orangestar.png"), auto;
 }
 
 @media screen and (max-width: 400px) {

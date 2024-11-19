@@ -23,10 +23,6 @@ h3 {
   font-family: "Poppins";
 }
 
-img {
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 p {
   color: midnightblue;
@@ -36,7 +32,6 @@ p {
 }
 
 a {
-  margin-left: 100px;
   font-family: "Poppins";
 }
 
@@ -79,9 +74,14 @@ footer {
 }
 
 .categories {
-  display: inline-flex;
-  flex: 1 1 200px;
-  justify-content: space-between;
-  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+}
 
+.categories img {
+  flex: 1;
+  max-width: 95%;
+  height: auto;
+  padding-left: 50px;
 }
