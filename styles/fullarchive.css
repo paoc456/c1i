@@ -91,7 +91,6 @@ img:hover {
     margin-left: calc(50% - 50vw);
     background-color: midnightblue;
     padding: 20px 0;
-    cursor: url("/images/orangestar.PNG"), auto;
 }
 
 @media screen and (max-width: 400px) {
