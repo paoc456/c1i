@@ -83,7 +83,7 @@ footer {
 }
 
 img:hover {
-    cursor: url("/images/orange.png"), auto;
+    cursor: url("/images/orange.png"), pointer;
 }
 
 .sectionblue {
