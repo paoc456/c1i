@@ -7,7 +7,7 @@ html {
 
 body {
   background-color: ivory;
-
+  overflow-x: hidden;
 }
 
 h1 {
@@ -99,11 +99,42 @@ footer {
 }
 
 .stripe {
-  font-size: 70px;
+  font-size: clamp(40px, 5vw, 70px);
   font-family: 'Poppins';
   font-style: italic;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  color: ivory;
+  background-color: midnightblue;
+  padding: 40px 100px;
+  min-height: 150px;
+  height: auto;
+  line-height: 1.05;
+  word-wrap: break-word;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .stripe {
+    padding: 30px 50px;
+    min-height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stripe {
+    padding: 5px 20px;
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stripe {
+    padding: 5px 0px;
+    min-height: 200px;
+  }
 }
 
 .stripe {
@@ -122,6 +153,7 @@ footer {
 .bottom {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  overflow-x: hidden;
 }
 
 .bottom {
@@ -153,79 +185,19 @@ footer {
   overflow: hidden;
 }
 
-.full-screen-svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.full-screen-svg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.mapsvg {
-  position: absolute;
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-}
 
 .bottom {
   position: relative;
   width: 100vw;
   height: auto;
   margin-bottom: 100px;
-  overflow: visible;
 }
 
-.entry-buttons {
+.map {
   position: absolute;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: none;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.entry-buttons::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: midnightblue;
-  color: ivory;
-  padding: 5px 10px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s;
-  z-index: 10;
-}
-
-.entry-buttons:hover::after {
-  opacity: 1;
-  visibility: visible;
-  font-family: 'Poppins';
-  font-size: 20px;
-}
-
-.entry-buttons.chinatown,
-.flatiron,
-.les,
-.williamsburg,
-.fidi,
-.eastvil,
-.ftgreene,
-.beacon,
-.westvil,
-.flushing {
-  background-color: midnightblue;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
 }
 
 .entry-buttons.fullarchive {
@@ -238,6 +210,12 @@ footer {
 @media screen and (max-width: 400px) {
   body {
     font-size: 1rem;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    width: 75vw;
   }
 }

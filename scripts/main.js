@@ -40,3 +40,4 @@ document.getElementById('btn10').addEventListener('click', () => {
 document.getElementById('btnF').addEventListener('click', () => {
     window.location.href = 'fullarchive.html';
 });
+

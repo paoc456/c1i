@@ -10,11 +10,14 @@ body {
 }
 
 h1 {
-    color: midnightblue;
-    margin-top: 50px;
-    margin-left: 50px;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
     font-family: "Poppins";
-    text-align: left;
+    color: midnightblue;
+    max-width: 600px;
+    line-height: 1.1;
 }
 
 h3 {
@@ -24,7 +27,7 @@ h3 {
 }
 
 * {
-    margin: 50;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -45,33 +48,95 @@ h1 {
 
 .image-grid {
     display: grid;
-    gap: 10px;
-    margin-left: 30px;
-    padding-right: 70px;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 3fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 50px;
+    padding: 20px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
 }
 
-.image-grid a img {
+.image-grid img {
     width: 100%;
     height: auto;
-    padding-right: 70px;
-    padding-bottom: 70px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.image-grid a img:hover {
-    transform: scale(1.05);
+.image-grid img:hover {
+    transform: scale(1.03);
+    cursor: url("/images/orange.png"), pointer;
+}
+
+.image-grid a {
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.menuitem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 60px;
+    cursor: pointer;
+}
+
+.menuitem svg {
+    width: 160px;
+    height: 160px;
+}
+
+@media screen and (max-width: 768px) {
+    .menuitem {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menuitem {
+        margin: 20px;
+    }
+
+    .menuitem svg {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 p {
     color: midnightblue;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-left: 100px;
     margin-right: 50px;
-    font-family: "Poppins"
+    font-family: "Poppins";
+    font-size: initial;
+    max-width: 500px;
+    line-height: 1.4;
 }
 
-a {
+a:not(.image-grid a) {
     margin-left: 100px;
     font-family: "Poppins";
 }
@@ -90,7 +155,8 @@ img:hover {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     background-color: midnightblue;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: url("/images/orange.png"), auto;
 }
 
@@ -179,13 +245,68 @@ img:hover {
     }
 }
 
-.menuitem {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 60px;
+@media screen and (max-width: 768px) {
+    .sectionblue {
+        font-size: 14px;
+    }
+
+    .sectionblue h1 {
+        font-size: 2rem;
+    }
+
+    .sectionblue p {
+        font-size: 1.1rem;
+    }
 }
 
-.menuitem {
-    cursor: pointer;
+@media screen and (max-width: 480px) {
+    .sectionblue {
+        font-size: 12px;
+    }
+
+    .sectionblue h1 {
+        font-size: 1.8rem;
+    }
+
+    .sectionblue p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+        margin-left: 50px;
+        margin-top: 50px;
+        max-width: 400px;
+    }
+
+    p {
+        margin-left: 50px;
+        margin-right: 25px;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 80px;
+        max-width: 280px;
+    }
+
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 350px;
+    }
+
+    a:not(.image-grid a) {
+        margin-left: 20px;
+    }
+
+    footer {
+        margin-left: 20px;
+    }
 }
